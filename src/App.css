@@ -1,38 +1,110 @@
 .App {
-  text-align: center;
+	box-sizing: border-box;
+	text-align: center;
+  	width: 300px;
+	margin: 65px 550px;
+	border-radius: 20px;
+	background: #453172;
+	box-shadow: 45px 45px 90px #2b1f48,
+				-45px -45px 90px #5f439c;
+	line-height: 0.3;
+	color: #c9bcd3fa;
+	letter-spacing: 1.5px;
+	}
+
+.Info {
+	border-radius: 20px 20px 0 0;
+	width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Info img{
+	border-radius: 20px 20px 0 0;
+	width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.texts{
+	display: block;
+	padding: -15px 0;
+	line-height: 0.3;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.texts h3{
+	font-weight: 700;
+
 }
 
-.App-link {
-  color: #61dafb;
+.texts h5{
+	font-weight: 500;
+	
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+	font-family: 'Fira Code iScript';
+	font-style: italic;
+	font-size: 11px;
+}
+
+.btn{
+	padding: 0 30px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+button {
+	border: none;
+	padding: 5px 10px;
+	border-radius: 3px;
+	font-family: 'karla';
+	color: #100b1c;
+}
+
+i{
+	margin:0 10px;
+}
+
+button:nth-child(2) {
+	background-color: #8f4cb8;
+	color: white;
+}
+
+.about, .interests {
+	padding: 0 30px;
+	display: block;
+	justify-content: flex-start;
+	text-align: start;
+}
+
+.about h4{
+	line-height: 0;
+	margin-top: 30px;
+}
+
+.interests h4{
+	line-height: 0;
+}
+
+.about p, .interests p{
+	line-height: 1;
+	margin-top: -10px;
+}
+
+.footer {
+	border-radius: 0 0 20px 20px;
+	background-color: #281c45;
+	padding: 15px;
+	font-size: 25px;
+}
+
+.footer i{
+	border-radius: 4px;
+		background: #281c45;
+		box-shadow: 3px 3px 6px #100b1c,
+			-3px -3px 6px #402d6e;
+}
+
+.footer i:hover{
+	border-radius: 4px;
+		background: #281c45;
+		box-shadow: inset 14px 14px 28px #18112a,
+			inset -14px -14px 28px #382760;
 }
